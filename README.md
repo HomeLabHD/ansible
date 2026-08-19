@@ -1,6 +1,6 @@
 # Ansible
 
-A lightweight, production-ready Ansible Docker image built on `python:3.14.3-alpine3.23`. Designed for running playbooks in CI/CD pipelines or local automation tasks. Powered by Ansible 2.20.3, pre-loaded with common community collections and WinRM support for managing Windows nodes.
+A lightweight, production-ready Ansible Docker image for running playbooks in CI/CD pipelines or local automation, pre-loaded with common community collections and WinRM support for managing Windows nodes.
 
 <!-- sf:project:start -->
 [![badge/GitHub-source-181717?logo=github](https://img.shields.io/badge/GitHub-source-181717?logo=github)](https://github.com/HomeLabHD/ansible) [![badge/GitLab-source-FC6D26?logo=gitlab](https://img.shields.io/badge/GitLab-source-FC6D26?logo=gitlab)](https://gitlab.prplanit.com/PrPlanIT/HomeLabHD/ansible) [![Last Commit](https://img.shields.io/github/last-commit/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/commits) [![Open Issues](https://img.shields.io/github/issues/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/issues) ![github/issues-pr/HomeLabHD/ansible](https://img.shields.io/github/issues-pr/HomeLabHD/ansible) [![Contributors](https://img.shields.io/github/contributors/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/graphs/contributors)
