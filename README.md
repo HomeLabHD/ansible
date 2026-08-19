@@ -3,54 +3,43 @@
 A lightweight, production-ready Ansible Docker image for running playbooks in CI/CD pipelines or local automation, pre-loaded with common community collections and WinRM support for managing Windows nodes.
 
 <!-- sf:project:start -->
-[![badge/GitHub-source-181717?logo=github](https://img.shields.io/badge/GitHub-source-181717?logo=github)](https://github.com/HomeLabHD/ansible) [![badge/GitLab-source-FC6D26?logo=gitlab](https://img.shields.io/badge/GitLab-source-FC6D26?logo=gitlab)](https://gitlab.prplanit.com/PrPlanIT/HomeLabHD/ansible) [![Last Commit](https://img.shields.io/github/last-commit/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/commits) [![Open Issues](https://img.shields.io/github/issues/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/issues) ![github/issues-pr/HomeLabHD/ansible](https://img.shields.io/github/issues-pr/HomeLabHD/ansible) [![Contributors](https://img.shields.io/github/contributors/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/graphs/contributors)
+[![GitHub](https://img.shields.io/badge/GitHub-source-181717?logo=github)](https://github.com/HomeLabHD/ansible) [![GitLab](https://img.shields.io/badge/GitLab-source-FC6D26?logo=gitlab)](https://gitlab.prplanit.com/HomeLabHD/ansible) [![Last Commit](https://img.shields.io/github/last-commit/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/commits) [![Open Issues](https://img.shields.io/github/issues/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/issues) [![Open PRs](https://img.shields.io/github/issues-pr/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/pulls) [![Contributors](https://img.shields.io/github/contributors/HomeLabHD/ansible)](https://github.com/HomeLabHD/ansible/graphs/contributors)
 <!-- sf:project:end -->
 <!-- sf:badges:start -->
-[![build](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/build.svg)](https://gitlab.prplanit.com/PrPlanIT/HomeLabHD/ansible/-/pipelines) [![license](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/license.svg)](https://github.com/HomeLabHD/ansible/blob/main/LICENSE) [![release](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/release.svg)](https://github.com/HomeLabHD/ansible/releases) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/updated.svg) [![badge/donate-FF5E5B?logo=ko-fi&logoColor=white](https://img.shields.io/badge/donate-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/T6T41IT163) [![badge/sponsor-EA4AAA?logo=githubsponsors&logoColor=white](https://img.shields.io/badge/sponsor-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/HomeLabHD)
+[![build](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/build.svg)](https://gitlab.prplanit.com/HomeLabHD/ansible/-/pipelines) [![license](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/license.svg)](https://github.com/HomeLabHD/ansible/blob/main/LICENSE) [![release](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/release.svg)](https://github.com/HomeLabHD/ansible/releases) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/updated.svg) [![donate](https://img.shields.io/badge/donate-FF5E5B?logo=ko-fi&logoColor=white)](https://ko-fi.com/T6T41IT163) [![sponsor](https://img.shields.io/badge/sponsor-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/HomeLabHD)
 <!-- sf:badges:end -->
 <!-- sf:image:start -->
-[![badge/Docker-hlhd%2Fansible-2496ED?logo=docker&logoColor=white](https://img.shields.io/badge/Docker-hlhd%2Fansible-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/hlhd/ansible) [![pulls](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/pulls.svg)](https://hub.docker.com/r/hlhd/ansible)
-
-[![latest](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/latest.svg)](https://hub.docker.com/r/hlhd/ansible/tags?name=latest) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/release-updated.svg) [![size](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/release-size.svg)](https://hub.docker.com/r/hlhd/ansible/tags?name=2.20.4) [![latest-dev](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/latest-dev.svg)](https://hub.docker.com/r/hlhd/ansible/tags?name=latest-dev) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/dev-updated.svg) [![size](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/badges/dev-size.svg)](https://hub.docker.com/r/hlhd/ansible/tags?name=latest-dev)
+[![Docker](https://img.shields.io/badge/Docker-hlhd%2Fansible-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/hlhd/ansible) [![pulls](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/pulls.svg)](https://hub.docker.com/r/hlhd/ansible) [![latest](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/release-latest.svg)](https://hub.docker.com/r/hlhd/ansible/tags?name=latest) [![latest-dev](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-latest.svg)](https://hub.docker.com/r/hlhd/ansible/tags?name=latest-dev) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-updated.svg) [![size](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-size.svg)](https://hub.docker.com/r/hlhd/ansible/tags?name=latest-dev)
 <!-- sf:image:end -->
 
 ### Image Contents
 
 <!-- sf:versions:start -->
-<details>
-<summary>Base image</summary>
-
-Built from `python:3.14.3-alpine3.23`.
-
-| Name | Version |
-| --- | --- |
-| python | 3.14.3 |
-
-</details>
+[![python 3.14.7](https://img.shields.io/badge/python-3.14.7-0078D4?style=flat)](https://hub.docker.com/_/python)
 <!-- sf:versions:end -->
 
 ### System Packages
 
 <!-- sf:apk:start -->
-![bash](https://img.shields.io/badge/bash-555?style=flat) ![coreutils](https://img.shields.io/badge/coreutils-555?style=flat) ![curl](https://img.shields.io/badge/curl-555?style=flat) ![git](https://img.shields.io/badge/git-555?style=flat) ![jq](https://img.shields.io/badge/jq-555?style=flat) ![openssh](https://img.shields.io/badge/openssh-555?style=flat) ![openssh-keygen](https://img.shields.io/badge/openssh--keygen-555?style=flat) ![rage](https://img.shields.io/badge/rage-555?style=flat) ![rsync](https://img.shields.io/badge/rsync-555?style=flat)
+[![bash](https://img.shields.io/badge/bash-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=bash) [![coreutils](https://img.shields.io/badge/coreutils-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=coreutils) [![curl](https://img.shields.io/badge/curl-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=curl) [![git](https://img.shields.io/badge/git-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=git) [![jq](https://img.shields.io/badge/jq-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=jq) [![openssh](https://img.shields.io/badge/openssh-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssh) [![openssh-keygen](https://img.shields.io/badge/openssh--keygen-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssh-keygen) [![rage](https://img.shields.io/badge/rage-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=rage) [![rsync](https://img.shields.io/badge/rsync-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=rsync)
 <!-- sf:apk:end -->
 
 ### Python Packages
 
 <!-- sf:pip:start -->
-![ansible-core](https://img.shields.io/badge/ansible--core-2.20.4-2ea043?style=flat) ![ansible-lint](https://img.shields.io/badge/ansible--lint-26.3.0-2ea043?style=flat) ![hvac](https://img.shields.io/badge/hvac-555?style=flat) ![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat) ![pip](https://img.shields.io/badge/pip-555?style=flat) ![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat) ![requests](https://img.shields.io/badge/requests-555?style=flat)
+[![ansible-core 2.20.4](https://img.shields.io/badge/ansible--core-2.20.4-2ea043?style=flat)](https://pypi.org/project/ansible-core/) [![ansible-lint 26.3.0](https://img.shields.io/badge/ansible--lint-26.3.0-2ea043?style=flat)](https://pypi.org/project/ansible-lint/) [![hvac](https://img.shields.io/badge/hvac-555?style=flat)](https://pypi.org/project/hvac/) [![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat)](https://pypi.org/project/kubernetes/) [![pip](https://img.shields.io/badge/pip-555?style=flat)](https://pypi.org/project/pip/) [![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat)](https://pypi.org/project/pywinrm/) [![requests](https://img.shields.io/badge/requests-555?style=flat)](https://pypi.org/project/requests/)
 <!-- sf:pip:end -->
 
 ### Ansible Collections
 
 <!-- sf:galaxy:start -->
-![ansible.posix](https://img.shields.io/badge/ansible.posix-555?style=flat) ![ansible.windows](https://img.shields.io/badge/ansible.windows-555?style=flat) ![community.docker](https://img.shields.io/badge/community.docker-555?style=flat) ![community.hashi_vault](https://img.shields.io/badge/community.hashi__vault-555?style=flat) ![community.sops](https://img.shields.io/badge/community.sops-555?style=flat) ![kubernetes.core](https://img.shields.io/badge/kubernetes.core-555?style=flat)
+[![ansible.posix](https://img.shields.io/badge/ansible.posix-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/ansible/posix/) [![ansible.windows](https://img.shields.io/badge/ansible.windows-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/ansible/windows/) [![community.docker](https://img.shields.io/badge/community.docker-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/community/docker/) [![community.hashi_vault](https://img.shields.io/badge/community.hashi__vault-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/community/hashi_vault/) [![community.sops](https://img.shields.io/badge/community.sops-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/community/sops/) [![kubernetes.core](https://img.shields.io/badge/kubernetes.core-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/kubernetes/core/)
 <!-- sf:galaxy:end -->
 
 ### Binary Tools
 
 <!-- sf:binaries:start -->
-![sops](https://img.shields.io/badge/sops-v3.12.2-2ea043?style=flat) ![yq](https://img.shields.io/badge/yq-v4.52.5-2ea043?style=flat)
+[![sops v3.13.3](https://img.shields.io/badge/sops-v3.13.3-2ea043?style=flat)](https://github.com/getsops/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux.amd64) [![yq v4.53.4](https://img.shields.io/badge/yq-v4.53.4-2ea043?style=flat)](https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64)
 <!-- sf:binaries:end -->
 
 ### Documentation
