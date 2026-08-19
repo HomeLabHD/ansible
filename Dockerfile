@@ -1,4 +1,4 @@
-FROM python:3.14.6-alpine3.23
+FROM python:3.14.7-alpine3.23
 
 # ============================================================================
 # Metadata
@@ -15,8 +15,8 @@ LABEL maintainer="HomeLabHD <homelabhelp@gmail.com>" \
 # ============================================================================
 # Versions
 # ============================================================================
-ARG YQ_VERSION=v4.53.3
-ARG SOPS_VERSION=v3.13.2
+ARG YQ_VERSION=v4.53.4
+ARG SOPS_VERSION=v3.13.3
 ARG ANSIBLE_CORE_VERSION=2.20.4
 ARG ANSIBLE_LINT_VERSION=26.3.0
 
