@@ -15,10 +15,12 @@ LABEL maintainer="HomeLabHD <homelabhelp@gmail.com>" \
 # ============================================================================
 # Versions
 # ============================================================================
-ARG YQ_VERSION=v4.53.4
-ARG SOPS_VERSION=v3.13.3
 ARG ANSIBLE_CORE_VERSION=2.20.4
 ARG ANSIBLE_LINT_VERSION=26.3.0
+ARG KUBECTL_VERSION=v1.34.8
+ARG KUSTOMIZE_VERSION=v5.8.0
+ARG SOPS_VERSION=v3.13.3
+ARG YQ_VERSION=v4.53.4
 
 # ============================================================================
 # Environment
@@ -43,11 +45,13 @@ RUN apk upgrade --no-cache && \
     rsync
 
 # ============================================================================
-# Binary tools (yq, sops)
+# Binary tools (kubectl, kustomize, sops, yq)
 # ============================================================================
-RUN curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64" -o /usr/local/bin/yq && \
+RUN curl -fsSL "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl" -o /usr/local/bin/kubectl && \
+    curl -fsSL "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2F${KUSTOMIZE_VERSION}/kustomize_${KUSTOMIZE_VERSION}_linux_amd64.tar.gz" | tar -xz -C /usr/local/bin kustomize && \
     curl -fsSL "https://github.com/getsops/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux.amd64" -o /usr/local/bin/sops && \
-    chmod +x /usr/local/bin/yq /usr/local/bin/sops
+    curl -fsSL "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64" -o /usr/local/bin/yq && \
+    chmod +x /usr/local/bin/kubectl /usr/local/bin/kustomize /usr/local/bin/sops /usr/local/bin/yq
 
 # ============================================================================
 # Python packages
