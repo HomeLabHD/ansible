@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------
 # GENERATED / ENFORCED BY STAGEFREIGHT GOVERNANCE
 # Source repo: PrPlanIT/MaintenancePolicy
-# Source ref: 814d185bc7dd335963b721170a179791bce141fc
+# Source ref: 643a4fdc2e87ac974407c3864a42f957fa9c56e5
 # Profile: hlhd-docker
 # This .stagefreight.yml is governed, not purely local.
 # To disable governance, detach from the control repo workflow.
@@ -123,7 +123,7 @@ preset_source:
   cache_policy: authoritative
   project_id: PrPlanIT/MaintenancePolicy
   provider: gitlab
-  ref: 814d185bc7dd335963b721170a179791bce141fc
+  ref: 643a4fdc2e87ac974407c3864a42f957fa9c56e5
   repo_url: https://gitlab.prplanit.com
 publish:
   preset: preset/publish-docker.yml
@@ -149,27 +149,27 @@ repos:
     worktree: .
 stencils:
   contents-apk:
-    build: ansible
+    build: image
     render: badges
     section: inventories.apk
     type: contents
   contents-base:
-    build: ansible
+    build: image
     render: badges
     section: inventories.versions
     type: contents
   contents-binaries:
-    build: ansible
+    build: image
     render: badges
     section: inventories.binaries
     type: contents
   contents-galaxy:
-    build: ansible
+    build: image
     render: badges
     section: inventories.galaxy
     type: contents
   contents-pip:
-    build: ansible
+    build: image
     render: badges
     section: inventories.pip
     type: contents
