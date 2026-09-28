@@ -15,9 +15,9 @@ LABEL maintainer="HomeLabHD <homelabhelp@gmail.com>" \
 # ============================================================================
 # Versions
 # ============================================================================
-ARG ANSIBLE_CORE_VERSION=2.20.4
-ARG ANSIBLE_LINT_VERSION=26.3.0
-ARG KUBECTL_VERSION=v1.34.8
+ARG ANSIBLE_CORE_VERSION=2.21.4
+ARG ANSIBLE_LINT_VERSION=26.9.0
+ARG KUBECTL_VERSION=v1.37.1
 ARG KUSTOMIZE_VERSION=v5.8.1
 ARG SOPS_VERSION=v3.13.3
 ARG YQ_VERSION=v4.53.6
