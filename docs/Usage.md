@@ -51,7 +51,7 @@ The image expects playbooks and configuration inside `/app` by default.
 ## Included Tools
 
 <!-- sf:usage-tools:start -->
-[![ansible-core 2.20.4](https://img.shields.io/badge/ansible--core-2.20.4-2ea043?style=flat)](https://pypi.org/project/ansible-core/) [![ansible-lint 26.3.0](https://img.shields.io/badge/ansible--lint-26.3.0-2ea043?style=flat)](https://pypi.org/project/ansible-lint/) [![hvac](https://img.shields.io/badge/hvac-555?style=flat)](https://pypi.org/project/hvac/) [![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat)](https://pypi.org/project/kubernetes/) [![pip](https://img.shields.io/badge/pip-555?style=flat)](https://pypi.org/project/pip/) [![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat)](https://pypi.org/project/pywinrm/) [![requests](https://img.shields.io/badge/requests-555?style=flat)](https://pypi.org/project/requests/)
+[![ansible-core 2.21.4](https://img.shields.io/badge/ansible--core-2.21.4-2ea043?style=flat)](https://pypi.org/project/ansible-core/) [![ansible-lint 26.9.0](https://img.shields.io/badge/ansible--lint-26.9.0-2ea043?style=flat)](https://pypi.org/project/ansible-lint/) [![hvac](https://img.shields.io/badge/hvac-555?style=flat)](https://pypi.org/project/hvac/) [![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat)](https://pypi.org/project/kubernetes/) [![pip](https://img.shields.io/badge/pip-555?style=flat)](https://pypi.org/project/pip/) [![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat)](https://pypi.org/project/pywinrm/) [![requests](https://img.shields.io/badge/requests-555?style=flat)](https://pypi.org/project/requests/)
 <!-- sf:usage-tools:end -->
 
 ## Ansible Collections

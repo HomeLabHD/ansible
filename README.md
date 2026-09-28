@@ -29,7 +29,7 @@ A lightweight, production-ready Ansible Docker image for running playbooks in CI
 ### Python Packages
 
 <!-- sf:pip:start -->
-[![ansible-core 2.20.4](https://img.shields.io/badge/ansible--core-2.20.4-2ea043?style=flat)](https://pypi.org/project/ansible-core/) [![ansible-lint 26.3.0](https://img.shields.io/badge/ansible--lint-26.3.0-2ea043?style=flat)](https://pypi.org/project/ansible-lint/) [![hvac](https://img.shields.io/badge/hvac-555?style=flat)](https://pypi.org/project/hvac/) [![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat)](https://pypi.org/project/kubernetes/) [![pip](https://img.shields.io/badge/pip-555?style=flat)](https://pypi.org/project/pip/) [![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat)](https://pypi.org/project/pywinrm/) [![requests](https://img.shields.io/badge/requests-555?style=flat)](https://pypi.org/project/requests/)
+[![ansible-core 2.21.4](https://img.shields.io/badge/ansible--core-2.21.4-2ea043?style=flat)](https://pypi.org/project/ansible-core/) [![ansible-lint 26.9.0](https://img.shields.io/badge/ansible--lint-26.9.0-2ea043?style=flat)](https://pypi.org/project/ansible-lint/) [![hvac](https://img.shields.io/badge/hvac-555?style=flat)](https://pypi.org/project/hvac/) [![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat)](https://pypi.org/project/kubernetes/) [![pip](https://img.shields.io/badge/pip-555?style=flat)](https://pypi.org/project/pip/) [![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat)](https://pypi.org/project/pywinrm/) [![requests](https://img.shields.io/badge/requests-555?style=flat)](https://pypi.org/project/requests/)
 <!-- sf:pip:end -->
 
 ### Ansible Collections
@@ -41,7 +41,7 @@ A lightweight, production-ready Ansible Docker image for running playbooks in CI
 ### Binary Tools
 
 <!-- sf:binaries:start -->
-[![kubectl v1.34.8](https://img.shields.io/badge/kubectl-v1.34.8-2ea043?style=flat)](https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl) [![kustomize v5.8.1](https://img.shields.io/badge/kustomize-v5.8.1-2ea043?style=flat)](https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2F${KUSTOMIZE_VERSION}/kustomize_${KUSTOMIZE_VERSION}_linux_amd64.tar.gz) [![sops v3.13.3](https://img.shields.io/badge/sops-v3.13.3-2ea043?style=flat)](https://github.com/getsops/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux.amd64) [![yq v4.53.6](https://img.shields.io/badge/yq-v4.53.6-2ea043?style=flat)](https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64)
+[![kubectl v1.37.1](https://img.shields.io/badge/kubectl-v1.37.1-2ea043?style=flat)](https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl) [![kustomize v5.8.1](https://img.shields.io/badge/kustomize-v5.8.1-2ea043?style=flat)](https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2F${KUSTOMIZE_VERSION}/kustomize_${KUSTOMIZE_VERSION}_linux_amd64.tar.gz) [![sops v3.13.3](https://img.shields.io/badge/sops-v3.13.3-2ea043?style=flat)](https://github.com/getsops/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux.amd64) [![yq v4.53.6](https://img.shields.io/badge/yq-v4.53.6-2ea043?style=flat)](https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64)
 <!-- sf:binaries:end -->
 
 ### Documentation
