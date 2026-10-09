@@ -1,4 +1,4 @@
-FROM python:3.14.7-alpine3.23
+FROM python:3.14.8-alpine3.23
 
 # ============================================================================
 # Metadata
@@ -15,12 +15,12 @@ LABEL maintainer="HomeLabHD <homelabhelp@gmail.com>" \
 # ============================================================================
 # Versions
 # ============================================================================
-ARG ANSIBLE_CORE_VERSION=2.21.4
+ARG ANSIBLE_CORE_VERSION=2.21.5
 ARG ANSIBLE_LINT_VERSION=26.9.0
 ARG KUBECTL_VERSION=v1.37.1
-ARG KUSTOMIZE_VERSION=v5.8.1
+ARG KUSTOMIZE_VERSION=v5.8.3
 ARG SOPS_VERSION=v3.13.3
-ARG YQ_VERSION=v4.53.6
+ARG YQ_VERSION=v4.54.1
 
 # ============================================================================
 # Environment
@@ -41,6 +41,7 @@ RUN apk upgrade --no-cache && \
     jq \
     openssh \
     openssh-keygen \
+    openssl \
     rage \
     rsync
 
