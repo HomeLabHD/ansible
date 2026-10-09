@@ -69,7 +69,9 @@ RUN pip3 install --no-cache-dir --upgrade pip && \
 # ============================================================================
 # Ansible collections
 # ============================================================================
-RUN ansible-galaxy collection install \
+# Install to the world-readable system path (a default collections search path) rather
+# than root's home, so the collections resolve when the image runs as a non-root UID.
+RUN ansible-galaxy collection install --collections-path /usr/share/ansible/collections \
     ansible.posix \
     ansible.windows \
     community.docker \
