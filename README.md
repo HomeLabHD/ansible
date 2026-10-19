@@ -52,7 +52,7 @@ A lightweight, production-ready Ansible Docker image for running playbooks in CI
 | [CI Component](docs/Component.md) | GitLab CI component inputs and setup |
 | [Windows](docs/Windows.md) | WinRM configuration and inventory |
 
-## Installation
+## Usage
 
 ```bash
 docker run --rm -v $(pwd):/app -w /app docker.io/hlhd/ansible:latest ansible-playbook playbook.yaml
