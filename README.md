@@ -14,20 +14,13 @@ A lightweight, production-ready Ansible Docker image for running playbooks in CI
 [![latest](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/release-latest.svg)](https://github.com/HomeLabHD/ansible/pkgs/container/ansible) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/release-updated.svg) [![size](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/release-size.svg)](https://github.com/HomeLabHD/ansible/pkgs/container/ansible) [![latest-dev](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-latest.svg)](https://github.com/HomeLabHD/ansible/pkgs/container/ansible) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-updated.svg) [![size](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-size.svg)](https://github.com/HomeLabHD/ansible/pkgs/container/ansible)
 <!-- sf:image:end -->
 
-### Image Contents
+## Image Contents
+
+### Python Packages
 
 <!-- sf:versions:start -->
 [![python 3.14.8](https://img.shields.io/badge/python-3.14.8-0078D4?style=flat)](https://hub.docker.com/_/python)
 <!-- sf:versions:end -->
-
-### System Packages
-
-<!-- sf:apk:start -->
-[![bash](https://img.shields.io/badge/bash-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=bash) [![coreutils](https://img.shields.io/badge/coreutils-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=coreutils) [![curl](https://img.shields.io/badge/curl-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=curl) [![git](https://img.shields.io/badge/git-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=git) [![jq](https://img.shields.io/badge/jq-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=jq) [![openssh](https://img.shields.io/badge/openssh-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssh) [![openssh-keygen](https://img.shields.io/badge/openssh--keygen-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssh-keygen) [![openssl](https://img.shields.io/badge/openssl-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssl) [![rage](https://img.shields.io/badge/rage-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=rage) [![rsync](https://img.shields.io/badge/rsync-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=rsync)
-<!-- sf:apk:end -->
-
-### Python Packages
-
 <!-- sf:pip:start -->
 [![ansible-core 2.21.5](https://img.shields.io/badge/ansible--core-2.21.5-2ea043?style=flat)](https://pypi.org/project/ansible-core/) [![ansible-lint 26.9.0](https://img.shields.io/badge/ansible--lint-26.9.0-2ea043?style=flat)](https://pypi.org/project/ansible-lint/) [![hvac](https://img.shields.io/badge/hvac-555?style=flat)](https://pypi.org/project/hvac/) [![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat)](https://pypi.org/project/kubernetes/) [![lxml](https://img.shields.io/badge/lxml-555?style=flat)](https://pypi.org/project/lxml/) [![pip](https://img.shields.io/badge/pip-555?style=flat)](https://pypi.org/project/pip/) [![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat)](https://pypi.org/project/pywinrm/) [![requests](https://img.shields.io/badge/requests-555?style=flat)](https://pypi.org/project/requests/)
 <!-- sf:pip:end -->
@@ -44,7 +37,13 @@ A lightweight, production-ready Ansible Docker image for running playbooks in CI
 [![kubectl v1.37.1](https://img.shields.io/badge/kubectl-v1.37.1-2ea043?style=flat)](https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl) [![kustomize v5.8.3](https://img.shields.io/badge/kustomize-v5.8.3-2ea043?style=flat)](https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2F${KUSTOMIZE_VERSION}/kustomize_${KUSTOMIZE_VERSION}_linux_amd64.tar.gz) [![sops v3.13.3](https://img.shields.io/badge/sops-v3.13.3-2ea043?style=flat)](https://github.com/getsops/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux.amd64) [![yq v4.54.1](https://img.shields.io/badge/yq-v4.54.1-2ea043?style=flat)](https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64)
 <!-- sf:binaries:end -->
 
-### Documentation
+### System Packages
+
+<!-- sf:apk:start -->
+[![bash](https://img.shields.io/badge/bash-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=bash) [![coreutils](https://img.shields.io/badge/coreutils-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=coreutils) [![curl](https://img.shields.io/badge/curl-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=curl) [![git](https://img.shields.io/badge/git-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=git) [![jq](https://img.shields.io/badge/jq-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=jq) [![openssh](https://img.shields.io/badge/openssh-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssh) [![openssh-keygen](https://img.shields.io/badge/openssh--keygen-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssh-keygen) [![openssl](https://img.shields.io/badge/openssl-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssl) [![rage](https://img.shields.io/badge/rage-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=rage) [![rsync](https://img.shields.io/badge/rsync-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=rsync)
+<!-- sf:apk:end -->
+
+## Documentation
 
 | Topic | |
 |-------|-|
