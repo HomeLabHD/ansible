@@ -63,6 +63,7 @@ RUN pip3 install --no-cache-dir --upgrade pip && \
     ansible-lint==${ANSIBLE_LINT_VERSION} \
     hvac \
     kubernetes \
+    lxml \
     pywinrm \
     requests
 
@@ -75,6 +76,7 @@ RUN ansible-galaxy collection install --collections-path /usr/share/ansible/coll
     ansible.posix \
     ansible.windows \
     community.docker \
+    community.general \
     community.hashi_vault \
     community.sops \
     kubernetes.core
