@@ -16,26 +16,29 @@ A lightweight, production-ready Ansible Docker image for running playbooks in CI
 
 ## Image Contents
 
-### Python Packages
-
-<!-- sf:versions:start -->
-[![python 3.14.8](https://img.shields.io/badge/python-3.14.8-0078D4?style=flat)](https://hub.docker.com/_/python)
-<!-- sf:versions:end -->
-<!-- sf:pip:start -->
-[![ansible-core 2.21.5](https://img.shields.io/badge/ansible--core-2.21.5-2ea043?style=flat)](https://pypi.org/project/ansible-core/) [![ansible-lint 26.9.0](https://img.shields.io/badge/ansible--lint-26.9.0-2ea043?style=flat)](https://pypi.org/project/ansible-lint/) [![hvac](https://img.shields.io/badge/hvac-555?style=flat)](https://pypi.org/project/hvac/) [![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat)](https://pypi.org/project/kubernetes/) [![lxml](https://img.shields.io/badge/lxml-555?style=flat)](https://pypi.org/project/lxml/) [![pip](https://img.shields.io/badge/pip-555?style=flat)](https://pypi.org/project/pip/) [![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat)](https://pypi.org/project/pywinrm/) [![requests](https://img.shields.io/badge/requests-555?style=flat)](https://pypi.org/project/requests/)
-<!-- sf:pip:end -->
-
 ### Ansible Collections
 
 <!-- sf:galaxy:start -->
 [![ansible.posix](https://img.shields.io/badge/ansible.posix-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/ansible/posix/) [![ansible.windows](https://img.shields.io/badge/ansible.windows-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/ansible/windows/) [![community.docker](https://img.shields.io/badge/community.docker-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/community/docker/) [![community.general](https://img.shields.io/badge/community.general-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/community/general/) [![community.hashi_vault](https://img.shields.io/badge/community.hashi__vault-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/community/hashi_vault/) [![community.sops](https://img.shields.io/badge/community.sops-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/community/sops/) [![kubernetes.core](https://img.shields.io/badge/kubernetes.core-555?style=flat)](https://galaxy.ansible.com/ui/repo/published/kubernetes/core/)
 <!-- sf:galaxy:end -->
 
+### Base Image
+
+<!-- sf:versions:start -->
+[![python 3.14.8](https://img.shields.io/badge/python-3.14.8-0078D4?style=flat)](https://hub.docker.com/_/python)
+<!-- sf:versions:end -->
+
 ### Binary Tools
 
 <!-- sf:binaries:start -->
 [![kubectl v1.37.1](https://img.shields.io/badge/kubectl-v1.37.1-2ea043?style=flat)](https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl) [![kustomize v5.8.3](https://img.shields.io/badge/kustomize-v5.8.3-2ea043?style=flat)](https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2F${KUSTOMIZE_VERSION}/kustomize_${KUSTOMIZE_VERSION}_linux_amd64.tar.gz) [![sops v3.13.3](https://img.shields.io/badge/sops-v3.13.3-2ea043?style=flat)](https://github.com/getsops/sops/releases/download/${SOPS_VERSION}/sops-${SOPS_VERSION}.linux.amd64) [![yq v4.54.1](https://img.shields.io/badge/yq-v4.54.1-2ea043?style=flat)](https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64)
 <!-- sf:binaries:end -->
+
+### Python Packages
+
+<!-- sf:pip:start -->
+[![ansible-core 2.21.5](https://img.shields.io/badge/ansible--core-2.21.5-2ea043?style=flat)](https://pypi.org/project/ansible-core/) [![ansible-lint 26.9.0](https://img.shields.io/badge/ansible--lint-26.9.0-2ea043?style=flat)](https://pypi.org/project/ansible-lint/) [![hvac](https://img.shields.io/badge/hvac-555?style=flat)](https://pypi.org/project/hvac/) [![kubernetes](https://img.shields.io/badge/kubernetes-555?style=flat)](https://pypi.org/project/kubernetes/) [![lxml](https://img.shields.io/badge/lxml-555?style=flat)](https://pypi.org/project/lxml/) [![pip](https://img.shields.io/badge/pip-555?style=flat)](https://pypi.org/project/pip/) [![pywinrm](https://img.shields.io/badge/pywinrm-555?style=flat)](https://pypi.org/project/pywinrm/) [![requests](https://img.shields.io/badge/requests-555?style=flat)](https://pypi.org/project/requests/)
+<!-- sf:pip:end -->
 
 ### System Packages
 
