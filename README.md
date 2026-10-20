@@ -14,6 +14,14 @@ A lightweight, production-ready Ansible Docker image for running playbooks in CI
 [![latest](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/release-latest.svg)](https://github.com/HomeLabHD/ansible/pkgs/container/ansible) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/release-updated.svg) [![size](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/release-size.svg)](https://github.com/HomeLabHD/ansible/pkgs/container/ansible) [![latest-dev](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-latest.svg)](https://github.com/HomeLabHD/ansible/pkgs/container/ansible) ![updated](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-updated.svg) [![size](https://raw.githubusercontent.com/HomeLabHD/ansible/main/.stagefreight/scribe/dev-size.svg)](https://github.com/HomeLabHD/ansible/pkgs/container/ansible)
 <!-- sf:image:end -->
 
+## Documentation
+
+| Topic | |
+|-------|-|
+| [Usage](docs/Usage.md) | Running the image locally and in CI/CD |
+| [CI Component](docs/Component.md) | GitLab CI component inputs and setup |
+| [Windows](docs/Windows.md) | WinRM configuration and inventory |
+
 ## Image Contents
 
 ### Ansible Collections
@@ -45,14 +53,6 @@ A lightweight, production-ready Ansible Docker image for running playbooks in CI
 <!-- sf:apk:start -->
 [![bash](https://img.shields.io/badge/bash-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=bash) [![coreutils](https://img.shields.io/badge/coreutils-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=coreutils) [![curl](https://img.shields.io/badge/curl-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=curl) [![git](https://img.shields.io/badge/git-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=git) [![jq](https://img.shields.io/badge/jq-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=jq) [![openssh](https://img.shields.io/badge/openssh-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssh) [![openssh-keygen](https://img.shields.io/badge/openssh--keygen-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssh-keygen) [![openssl](https://img.shields.io/badge/openssl-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=openssl) [![rage](https://img.shields.io/badge/rage-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=rage) [![rsync](https://img.shields.io/badge/rsync-555?style=flat)](https://pkgs.alpinelinux.org/packages?name=rsync)
 <!-- sf:apk:end -->
-
-## Documentation
-
-| Topic | |
-|-------|-|
-| [Usage](docs/Usage.md) | Running the image locally and in CI/CD |
-| [CI Component](docs/Component.md) | GitLab CI component inputs and setup |
-| [Windows](docs/Windows.md) | WinRM configuration and inventory |
 
 ## Usage
 
