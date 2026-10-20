@@ -34,6 +34,7 @@ WORKDIR /app
 # ============================================================================
 RUN apk upgrade --no-cache && \
     apk add --no-cache \
+    attr \
     bash \
     coreutils \
     curl \
