@@ -142,6 +142,11 @@ repos:
     roles:
       - primary
     worktree: .
+schedules:
+  upstream-refresh:
+    build: changes
+    cron: H H * * *
+    reason: Daily watch of ansible-core on PyPI; move to its new release.
 stencils:
   contents-binaries:
     build: image
@@ -167,3 +172,18 @@ toolchains:
   want:
     presets:
       - https://git.optcp.com/PrPlanIT/MaintenancePolicy//preset/toolchains-scanners.yml
+upstream:
+  evidence:
+    image:
+      probe:
+        manager: pip
+        package: ansible-core
+  sources:
+    core:
+      pins:
+        - arg: ANSIBLE_CORE_VERSION
+          file: Dockerfile
+      pypi: ansible-core
+  version:
+    since: v2.21.5
+    track: core
