@@ -143,10 +143,7 @@ repos:
       - primary
     worktree: .
 schedules:
-  upstream-refresh:
-    build: changes
-    cron: H H * * *
-    reason: Daily watch of ansible-core on PyPI; move to its new release.
+  preset: https://git.optcp.com/PrPlanIT/MaintenancePolicy//preset/schedules-upstream.yml
 stencils:
   contents-binaries:
     build: image
