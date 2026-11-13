@@ -20,7 +20,7 @@ ARG ANSIBLE_LINT_VERSION=26.9.0
 ARG KUBECTL_VERSION=v1.37.1
 ARG KUSTOMIZE_VERSION=v5.8.3
 ARG SOPS_VERSION=v3.13.3
-ARG YQ_VERSION=v4.54.1
+ARG YQ_VERSION=v4.54.2
 
 # ============================================================================
 # Environment
