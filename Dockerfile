@@ -44,7 +44,11 @@ RUN apk upgrade --no-cache && \
     openssh-keygen \
     openssl \
     rage \
-    rsync
+    rsync \
+    tar \
+    unzip \
+    xz \
+    zstd
 
 # ============================================================================
 # Binary tools (kubectl, kustomize, sops, yq)
