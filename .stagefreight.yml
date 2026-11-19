@@ -23,7 +23,6 @@ scribe:
       - docs/Usage.md
       - .stagefreight/scribe
     message: refresh generated docs and badges
-    type: docs
   files:
     readme.apk:
       between:
@@ -102,7 +101,6 @@ metadata:
   description:
     - Container image for running Ansible playbooks in CI and local automation.
     - Lightweight Ansible image preloaded with common community collections, WinRM support for Windows nodes, and kubectl + kustomize for Kubernetes work — built for running playbooks in CI/CD pipelines and homelab automation.
-  license: GPL-3.0
   org: HomeLabHD
   title: Ansible
   topics:
@@ -170,16 +168,6 @@ toolchains:
     presets:
       - https://git.optcp.com/PrPlanIT/MaintenancePolicy//preset/toolchains-scanners.yml
 upstream:
-  evidence:
-    image:
-      manager: pip
-      package: ansible-core
-  sources:
-    core:
-      pins:
-        - arg: ANSIBLE_CORE_VERSION
-          file: Dockerfile
-      pypi: ansible-core
   version:
     since: v2.21.5
-    track: core
+    track: ansible-core
