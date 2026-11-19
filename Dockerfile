@@ -15,6 +15,7 @@ LABEL maintainer="HomeLabHD <homelabhelp@gmail.com>" \
 # ============================================================================
 # Versions
 # ============================================================================
+# renovate: datasource=pypi depName=ansible-core
 ARG ANSIBLE_CORE_VERSION=2.22.0
 ARG ANSIBLE_LINT_VERSION=26.9.0
 ARG KUBECTL_VERSION=v1.37.1
