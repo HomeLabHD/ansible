@@ -172,9 +172,8 @@ toolchains:
 upstream:
   evidence:
     image:
-      probe:
-        manager: pip
-        package: ansible-core
+      manager: pip
+      package: ansible-core
   sources:
     core:
       pins:
